@@ -30,7 +30,7 @@ public class Pessoa {
     }
 
     public String getCpf() {
-        return cpf;
+        return cpf.substring(0, 3) + "." + cpf.substring(2, 5) + "." + cpf.substring(5, 8) + "-" + cpf.charAt(9) + cpf.charAt(10);
     }
 
     public void setCpf(String cpf) {
